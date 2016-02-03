@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DA1AB8D0AEA2300080D282CC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E277CEF598633532D01E79 /* Pods.framework */; };
+		EC384A471C61900B00A19A4E /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC384A461C61900B00A19A4E /* Band.swift */; };
+		EC384A491C61ABBC00A19A4E /* BandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC384A481C61ABBC00A19A4E /* BandsTableViewController.swift */; };
+		EC384A4B1C61AC0700A19A4E /* parsedBands.json in Resources */ = {isa = PBXBuildFile; fileRef = EC384A4A1C61AC0700A19A4E /* parsedBands.json */; };
+		EC384A4D1C61ADEC00A19A4E /* BandsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC384A4C1C61ADEC00A19A4E /* BandsStore.swift */; };
 		EC8F97E91C5D6F1A001ABE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F97E81C5D6F1A001ABE49 /* AppDelegate.swift */; };
 		EC8F97EB1C5D6F1A001ABE49 /* PorchfestMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F97EA1C5D6F1A001ABE49 /* PorchfestMapViewController.swift */; };
-		EC8F97ED1C5D6F1A001ABE49 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F97EC1C5D6F1A001ABE49 /* SecondViewController.swift */; };
 		EC8F97F01C5D6F1A001ABE49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8F97EE1C5D6F1A001ABE49 /* Main.storyboard */; };
 		EC8F97F21C5D6F1A001ABE49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8F97F11C5D6F1A001ABE49 /* Assets.xcassets */; };
 		EC8F97F51C5D6F1B001ABE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8F97F31C5D6F1B001ABE49 /* LaunchScreen.storyboard */; };
@@ -20,10 +23,13 @@
 		5C95A980910EEAC7EB5CFC55 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5EC7C937AF210713A20F1960 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		73E277CEF598633532D01E79 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC384A461C61900B00A19A4E /* Band.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Band.swift; sourceTree = "<group>"; };
+		EC384A481C61ABBC00A19A4E /* BandsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandsTableViewController.swift; sourceTree = "<group>"; };
+		EC384A4A1C61AC0700A19A4E /* parsedBands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parsedBands.json; sourceTree = "<group>"; };
+		EC384A4C1C61ADEC00A19A4E /* BandsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandsStore.swift; sourceTree = "<group>"; };
 		EC8F97E51C5D6F1A001ABE49 /* Porchfest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Porchfest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8F97E81C5D6F1A001ABE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8F97EA1C5D6F1A001ABE49 /* PorchfestMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorchfestMapViewController.swift; sourceTree = "<group>"; };
-		EC8F97EC1C5D6F1A001ABE49 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EC8F97EF1C5D6F1A001ABE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC8F97F11C5D6F1A001ABE49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8F97F41C5D6F1B001ABE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +65,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC384A451C618FFD00A19A4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC384A461C61900B00A19A4E /* Band.swift */,
+				EC384A4C1C61ADEC00A19A4E /* BandsStore.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		EC8F97DC1C5D6F1A001ABE49 = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +95,15 @@
 		EC8F97E71C5D6F1A001ABE49 /* Porchfest */ = {
 			isa = PBXGroup;
 			children = (
+				EC384A451C618FFD00A19A4E /* Models */,
 				EC8F97E81C5D6F1A001ABE49 /* AppDelegate.swift */,
 				EC8F97EA1C5D6F1A001ABE49 /* PorchfestMapViewController.swift */,
-				EC8F97EC1C5D6F1A001ABE49 /* SecondViewController.swift */,
+				EC384A481C61ABBC00A19A4E /* BandsTableViewController.swift */,
 				EC8F97EE1C5D6F1A001ABE49 /* Main.storyboard */,
 				EC8F97F11C5D6F1A001ABE49 /* Assets.xcassets */,
 				EC8F97F31C5D6F1B001ABE49 /* LaunchScreen.storyboard */,
 				EC8F97F61C5D6F1B001ABE49 /* Info.plist */,
+				EC384A4A1C61AC0700A19A4E /* parsedBands.json */,
 			);
 			path = Porchfest;
 			sourceTree = "<group>";
@@ -155,6 +172,7 @@
 				EC8F97F51C5D6F1B001ABE49 /* LaunchScreen.storyboard in Resources */,
 				EC8F97F21C5D6F1A001ABE49 /* Assets.xcassets in Resources */,
 				EC8F97F01C5D6F1A001ABE49 /* Main.storyboard in Resources */,
+				EC384A4B1C61AC0700A19A4E /* parsedBands.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8F97ED1C5D6F1A001ABE49 /* SecondViewController.swift in Sources */,
+				EC384A4D1C61ADEC00A19A4E /* BandsStore.swift in Sources */,
+				EC384A491C61ABBC00A19A4E /* BandsTableViewController.swift in Sources */,
 				EC8F97E91C5D6F1A001ABE49 /* AppDelegate.swift in Sources */,
+				EC384A471C61900B00A19A4E /* Band.swift in Sources */,
 				EC8F97EB1C5D6F1A001ABE49 /* PorchfestMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

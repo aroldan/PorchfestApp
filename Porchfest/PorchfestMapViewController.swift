@@ -10,6 +10,9 @@ import UIKit
 import GoogleMaps
 
 class PorchfestMapViewController: UIViewController, GMSMapViewDelegate {
+    
+    // use this js snippet to plunder
+    // JSON.stringify(Drupal.settings.gmap.porchfest.markers.map(function(m) { return {lat:m.latitude, lon: m.longitude, t: m.text, name:m.markername}}));
 
     @IBOutlet weak var mapView: UIView!
     
@@ -22,7 +25,7 @@ class PorchfestMapViewController: UIViewController, GMSMapViewDelegate {
         let mapView = GMSMapView.mapWithFrame(self.mapView.bounds, camera: camera)
         mapView.myLocationEnabled = true
         self.mapView.addSubview(mapView)
-        mapView.delegate = self
+//        mapView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,9 +33,6 @@ class PorchfestMapViewController: UIViewController, GMSMapViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func mapView(mapView: GMSMapView!, didChangeCameraPosition position: GMSCameraPosition!) {
-        NSLog("LL: %f,%f Zoom is: %f", position.target.latitude, position.target.longitude, mapView.camera.zoom)
-    }
 
 }
 
